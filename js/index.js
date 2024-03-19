@@ -1,4 +1,4 @@
-import { reload } from "./ui.js";
+import { reload } from "./ui.js"
 
 let form = document.forms.addTodo
 let todos = []
@@ -11,7 +11,7 @@ form.onsubmit = (e) => {
         id: Math.random(),
         task: new FormData(form).get('todo'),
         status: false,
-        time: new Date().toLocaleTimeString() + ` (${new Date().toLocaleDateString()})`
+        time: new Date().toLocaleTimeString() + ' (' + new Date().toLocaleDateString() + ')'
     }
 
     if (todo.task.trim() !== '') {

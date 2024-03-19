@@ -21,5 +21,11 @@ export function reload(arr, place) {
         place.append(element)
         element.append(title, time, el_del)
         el_del.append(del_img)
+
+        el_del.onclick = () => {
+            let itemIdx = arr.findIndex(el => el.id === item.id)
+            arr.splice(itemIdx, 1)
+            element.remove()
+        }
     }
 }
