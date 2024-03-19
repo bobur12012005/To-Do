@@ -14,9 +14,9 @@
     margin-block: 50px;
 
     h1 {
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     form {
@@ -27,25 +27,87 @@
         gap: 10px;
 
         input {
-            width: 300px;
-            height: 40px;
-            border-radius: 4px;
+            width: 400px;
+            height: 50px;
+            border-radius: 6px;
             outline: none;
             padding-inline: 20px;
-            border-color: blue;
+            border: 2px solid #0071E3;
+
+            &::placeholder {
+                color: #0071e383;
+            }
         }
 
         button {
-            width: 100px;
-            height: 40px;
-            border-radius: 4px;
-            color: white;
-            background-color: blue;
+            width: 200px;
+            height: 50px;
+            border-radius: 6px;
+            color: #ffffff;
+            background-color: #0071E3;
             border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 1px;
+    padding-block: 18px;
+    padding-inline: 72px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+    border-top: 2px solid #00000030;
+
+
+    .element {
+        position: relative;
+        width: 340px;
+        height: 100px;
+        background-color: #00000010;
+        border-radius: 6px;
+        border: 2px solid #0071E3;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        padding-inline: 20px;
+
+        .title {
+            font-size: 26px;
+            font-weight: 600;
+            color: #000000;
         }
 
-        &::placeholder {
-            color: blue;
+        .time {
+            font-size: 14px;
+            font-weight: bold;
+            color: #898989;
+        }
+
+        .delete {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: white;
+
+            img {
+                width: 13px;
+                height: 13px;
+            }
         }
     }
 }

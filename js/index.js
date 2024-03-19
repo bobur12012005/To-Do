@@ -8,11 +8,11 @@ form.onsubmit = (e) => {
         id: Math.random(),
         task: new FormData(form).get('todo'),
         status: false,
-        time: new Date()
+        time: new Date().toLocaleTimeString()
     }
     
     if (todo.task.trim() !== '') {
         todos.push(todo)
-        console.log(todos);
+        console.log(todos)
     }
 }
