@@ -47,6 +47,17 @@
             background-color: #0071E3;
             border: none;
             cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            transition: 0.2s ease-in-out;
+        }
+
+        button:active {
+            transform: scale(1.00);
+            transition: 0.2s ease-in-out;
         }
     }
 }

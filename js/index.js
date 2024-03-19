@@ -17,5 +17,6 @@ form.onsubmit = (e) => {
     if (todo.task.trim() !== '') {
         todos.push(todo)
         reload(todos, container)
+        form.reset()
     }
 }
